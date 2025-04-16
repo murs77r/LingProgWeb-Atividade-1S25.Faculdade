@@ -1,9 +1,55 @@
-let arrayPrincipal = [1, 2, [3, 4], 5, 6]
+let arrayPrincipal = [
+    [
+        [
+            [
+                [0, 1],
+                [2, 3]
+            ],
+            [
+                [4, 5],
+                [6, 7]
+            ]
+        ],
+        [
+            [
+                [8, 9],
+                [10, 11]
+            ],
+            [
+                [12, 13],
+                [14, 15]
+            ]
+        ]
+    ]
+]
 function atualizarArray() {
     document.getElementById('textoarray').textContent = JSON.stringify(arrayPrincipal)
 }
 function resetarArray() {
-    arrayPrincipal = [1, 2, [3, 4], 5, 6]
+    arrayPrincipal = [
+        [
+            [
+                [
+                    [0, 1],
+                    [2, 3]
+                ],
+                [
+                    [4, 5],
+                    [6, 7]
+                ]
+            ],
+            [
+                [
+                    [8, 9],
+                    [10, 11]
+                ],
+                [
+                    [12, 13],
+                    [14, 15]
+                ]
+            ]
+        ]
+    ]
     atualizarArray()
     document.getElementById('resultadoSlice').textContent = ''
 }
